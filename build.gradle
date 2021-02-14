@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+
+    id 'org.jetbrains.kotlin.jvm' version "1.4.20"
+    id 'org.jetbrains.kotlin.plugin.serialization' version "1.4.20"
+
+    id 'com.github.johnrengelman.shadow' version '6.0.0'
+
+    id("net.mamoe.mirai-console") version "2.4-RC" // mirai-console version
+}
+
+group = "ltd.icecold"
+version = "1.0-SNAPSHOT"
+
+repositories {
+    maven { url 'https://maven.aliyun.com/repository/public/' }
+    //mavenLocal()
+    //jcenter()
+    //mavenCentral()
+}
+
+dependencies {
+    compile group: 'ltd.icecold', name: 'OrangeAPI', version: '1.0.1'
+}
+
+mirai {
+    coreVersion = "2.4-RC" // mirai-core version
+
+    publishing {
+        it.repo = "mirai"
+        it.packageName  = "ltd.icecold.music"
+        it.override = true
+    }
+}
+
