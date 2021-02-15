@@ -84,7 +84,7 @@ object Music : KotlinPlugin(
 
                 val musicUrl = musicUrlBean.data[0].url
 
-                if (musicUrl == ""){
+                if (musicUrl == null){
                     subject.sendMessage("❌ 歌曲没有版权或获取链接失败无法播放")
                     return@subscribeAlways
                 }
@@ -179,7 +179,7 @@ object Music : KotlinPlugin(
 
                 val musicUrl = musicUrlBean.data[0].url
 
-                if (musicUrl == ""){
+                if (musicUrl == null){
                     subject.sendMessage("❌ 歌曲没有版权或获取链接失败无法播放")
                     return@subscribeAlways
                 }
