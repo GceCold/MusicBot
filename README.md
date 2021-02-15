@@ -2,6 +2,8 @@
 
 第一次使用kotlin 一个小时写完的 重复代码较多 建议自行修改优化 使用[OrangeAPI](https://github.com/GceCold/OrangeAPI )获取歌曲相关信息
 
+用于解析json的bean是插件自动生成的比较乱
+
 同时演示了如何自定义OrangeAPI中未封装的API
 
 ```kotlin
