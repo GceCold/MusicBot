@@ -7,7 +7,7 @@
 同时演示了如何自定义OrangeAPI中未封装的API
 
 ```kotlin
-private fun musicDetail(musicId: String, cookie: Map<String, String>): NeteaseResponseBody {
+fun musicDetail(musicId: String, cookie: Map<String, String>): NeteaseResponseBody {
     val data = mutableMapOf("c" to "[{\"id\":$musicId}]", "ids" to "[$musicId]")
     val neteaseRequestOptions = NeteaseRequestOptions(
         "https://music.163.com/weapi/v3/song/detail",
